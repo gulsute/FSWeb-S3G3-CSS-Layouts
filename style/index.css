@@ -1,1 +1,81 @@
 /* CSS stillerinizi buraya girin */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5efe7;
+}
+
+h1 {
+  font-size: 28px;
+  color: #4f709c;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: auto;
+}
+nav {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #4f709c;
+  color: #f5efe7;
+  font-weight: 100;
+  border: 1px solid #213555;
+  padding: 8px;
+}
+
+nav a:hover {
+  background-color: #213555;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: auto;
+}
+.Proje1 img,
+.Proje2 img,
+.Proje3 img,
+.Proje4 img,
+.Proje5 img,
+.Proje6 img {
+  display: inline-flex;
+  flex-basis: 30%;
+  width: 30%;
+}
+
+footer {
+  display: flex;
+  background-color: #d8c4b6;
+  height: 130px;
+  justify-content: center;
+  align-items: center;
+}
+
+.b-u-button {
+  display: flex;
+  align-items: center;
+  color: #4f709c;
+  border: 1px solid #213555;
+  padding: 3px 8px;
+  height: 30px;
+  background-color: #f5efe7;
+}
+
+.b-u-button:hover {
+  background-color: #213555;
+  color: #f5efe7;
+}
