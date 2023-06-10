@@ -2,9 +2,13 @@
 
 * {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5efe7;
 }
 
+body {
+  background-color: #f5efe7;
+  margin: 0;
+  flex-basis: auto;
+}
 h1 {
   font-size: 28px;
   color: #4f709c;
@@ -14,14 +18,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 nav {
   display: flex;
 }
 
-nav a {
+nav a,
+footer a {
   text-decoration: none;
   background-color: #4f709c;
   color: #f5efe7;
@@ -30,31 +35,41 @@ nav a {
   padding: 8px;
 }
 
-nav a:hover {
+nav a:hover,
+footer a:hover {
   background-color: #213555;
 }
 
-img {
+main {
   display: flex;
   justify-content: center;
   margin: auto;
+  object-fit: cover;
+  max-width: 900px;
 }
 
-.container {
+main img,
+.Projeler img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Proje {
+  display: flex;
+  flex-basis: 31.5%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Projeler {
   display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
-  margin: auto;
-}
-.Proje1 img,
-.Proje2 img,
-.Proje3 img,
-.Proje4 img,
-.Proje5 img,
-.Proje6 img {
-  display: inline-flex;
-  flex-basis: 30%;
-  width: 30%;
+  object-position: center center;
+  margin: 0 20px;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 0;
 }
 
 footer {
@@ -63,19 +78,4 @@ footer {
   height: 130px;
   justify-content: center;
   align-items: center;
-}
-
-.b-u-button {
-  display: flex;
-  align-items: center;
-  color: #4f709c;
-  border: 1px solid #213555;
-  padding: 3px 8px;
-  height: 30px;
-  background-color: #f5efe7;
-}
-
-.b-u-button:hover {
-  background-color: #213555;
-  color: #f5efe7;
 }
